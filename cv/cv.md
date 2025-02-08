@@ -34,6 +34,11 @@ app and related software. It's on Brazil's Google Play Store under the name
 
 ## Education
 
+Since 2025
+: M.Sc, Computer Science, Georgia Institute of Technology, United States
+: Coursework
+:: Applied Cryptography
+
 2011-2016
 : B.Sc, Computer Science, Universidade Federal de Goiás, Goiânia, Brazil
 : Teaching Assistant:  
