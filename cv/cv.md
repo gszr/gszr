@@ -35,12 +35,12 @@ app and related software. It's on Brazil's Google Play Store under the name
 ## Education
 
 Since 2025
-: M.Sc, Computer Science, Georgia Institute of Technology, United States
-: Coursework
+: M.Sc, Computer Science, Georgia Institute of Technology, United States  
+: Coursework  
 :: Applied Cryptography
 
 2011-2016
-: B.Sc, Computer Science, Universidade Federal de Goiás, Goiânia, Brazil
+: B.Sc, Computer Science, Universidade Federal de Goiás, Goiânia, Brazil  
 : Teaching Assistant:  
 :: Software Construction, Operating Systems, and Formal Languages & Automata
 : Research Assistant:  
@@ -48,7 +48,7 @@ Since 2025
 :: 2011: Coordination primitives in event-driven concurrent/distributed systems
 
 2012-2013
-: Non-Degree, Computer Science, University of South Carolina, Columbia
+: Non-Degree, Computer Science, University of South Carolina, Columbia  
 : Under full scholarship, awarded by the Ministry of Education, Brazil
 : Alpha Lambda Delta Honor Society, Dean's Honor List
 : Part-time programmer  
