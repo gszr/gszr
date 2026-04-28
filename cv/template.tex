@@ -1,0 +1,76 @@
+\documentclass[11pt, a4paper]{article}
+
+% -- Geometry --
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+
+% -- Fonts --
+\usepackage[T1]{fontenc}
+\setcounter{secnumdepth}{-1}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+% -- Colors --
+\usepackage{xcolor}
+\definecolor{heading}{HTML}{000000}
+\definecolor{accent}{HTML}{000000}
+\definecolor{rule}{HTML}{cccccc}
+\definecolor{subtle}{HTML}{555555}
+
+% -- Links --
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+% -- Spacing --
+\usepackage{parskip}
+\setlength{\parskip}{0.4em}
+\pagestyle{empty}
+
+% -- Lists --
+\usepackage{enumitem}
+\setlist[itemize]{
+  leftmargin=2.5em,
+  itemsep=0.15em,
+  parsep=0em,
+  topsep=0.3em
+}
+
+% -- Section styling --
+\usepackage{titlesec}
+
+% Name heading (h1) — large, centered, no rule
+\titleformat{\section}[block]
+  {\huge\bfseries\centering\color{heading}}
+  {}
+  {0em}
+  {}
+
+\titlespacing*{\section}{0pt}{0pt}{0.2em}
+
+% Section headings (h2) — uppercase with horizontal rule
+\titleformat{\subsection}[block]
+  {\vspace{0.4em}\large\bfseries\color{accent}}
+  {}
+  {0em}
+  {\MakeUppercase}
+  [\vspace{-0.5em}{\color{rule}\rule{\linewidth}{0.4pt}}]
+
+\titlespacing*{\subsection}{0pt}{0.8em}{0.4em}
+
+% Job titles (h3)
+\titleformat{\subsubsection}[block]
+  {\normalsize\bfseries\color{heading}}
+  {}
+  {0em}
+  {}
+
+\titlespacing*{\subsubsection}{0pt}{0.6em}{0.1em}
+
+% -- Pandoc tightlist compat --
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% -- Begin --
+\begin{document}
+
+$body$
+
+\end{document}

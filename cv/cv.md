@@ -1,82 +1,92 @@
-Guilherme Salazar
-=================
+# Guilherme Salazar
 
-Goiânia, Goiás, Brazil  
-[https://www.github.com/gszr](https://github.com/gszr)  
-[https://www.linkedin.com/in/gszr](https://www.linkedin.com/in/gszr)  
-[gsz@acm.org](mailto:gsz@acm.org)
+\begin{center}
+Goiânia, Goiás, Brazil |
+\href{https://github.com/gszr}{github.com/gszr} |
+\href{https://www.linkedin.com/in/gszr}{linkedin.com/in/gszr} |
+\href{mailto:gsz@acm.org}{gsz@acm.org}
+
+\smallskip
+\textit{Software engineer with 10+ years of experience building foundational API
+infrastructure. Currently working on AI-agent tooling at Kong (Context Mesh,
+Model Context Protocol) after years of shaping how traffic flows between
+services across Kong Gateway and Kong Enterprise.}
+\end{center}
 
 ## Experience
 
-Since 2017
-: Sr. Software Engineer, [Kong Inc.](https://konghq.com/)  
-:: Part of the team that develops and maintains Kong Gateway - the
-world's most popular API platform (details on my LinkedIn profile)
+### Sr. Software Engineer — Kong Inc. (Jul 2017–Present)
 
-Oct 2016-Jul 2017
-: Backend Engineer, [Appbase.io](https://appbase.io)  
-:: Built a data streaming platform for Elasticsearch based on OpenResty (Nginx + Lua)
+- **Context Mesh (current)** — Contributing to Kong Context Mesh, bridging AI
+  agents with enterprise APIs via the Model Context Protocol (MCP). Building
+  tooling that turns existing resources into production-ready MCP servers,
+  working across Go (code generation, OpenAPI parsing) and Python (MCP server
+  runtime) to deliver single-file, self-contained servers.
+- **Enterprise features** — Built core enterprise capabilities including RBAC,
+  Workspaces, and the first license validation module and license generation API.
+- **Plugin ecosystems** — Co-implemented Go plugin support and co-authored
+  several core/enterprise plugins (Request Callout, Proxy Cache, Request
+  Validator, Rate Limiting Advanced, and others).
+- **Service mesh** — Collaborated with the Office of the CTO on the initial
+  release of Kuma, now a CNCF Sandbox project.
+- **Networking & protocols** — Delivered gRPC proxying support for Kong Gateway.
+- **Supply-chain security & compliance** — Co-implemented SBOM generation for
+  Kong Gateway and delivered SLSA-related improvements.
+- **Cryptography** — Co-implemented FIPS 140-2 compatibility for Kong Gateway
+  using BoringSSL.
+- **Build & delivery automation** — Designed Kong Enterprise's first artifact
+  delivery pipeline, reducing package and Docker image build times to under 10
+  minutes.
+- **Release engineering** — Acted as release engineer for 6 Kong Enterprise
+  releases, plus customer-specific builds.
 
-Sept 2015-Feb 2016
-: Intern, [Zenedge](https://zenedge.com/)
+### Backend Engineer — Appbase.io (Oct 2016–Jul 2017)
 
-Apr 2015-Aug 2015
-: Student Developer, [Google Summer of Code 2015](https://www.google-melange.com/archive/gsoc/2015)  
-:: Participant in the Google Summer of Code 2015. Ported Lua test suite to
-NetBSD kernel space -- GitHub.com/gszr/luatests
+- Designed and built a data streaming layer for Elasticsearch (2.x and 5.x)
+  based on OpenResty (Nginx + Lua).
+- Built tooling to automate Elasticsearch benchmarks end-to-end, from cluster
+  provisioning to benchmark execution using Elasticsearch Rally.
 
-Jan 2014-Jul 2015
-: Programmer, Macro Softwares  
-:: Part-time programmer, while in college. Developed an Android app for
-package delivery management along with spring RESTful web services used by the
-app and related software. It's on Brazil's Google Play Store under the name
-"Entregador Online"
+### Student Developer — Google Summer of Code 2015 (Mar–Aug 2015)
+
+- Contributed to the NetBSD kernel port of Lua by porting the Lua test suite
+  to kernel space and resolving defects identified in the process. Subsequently
+  accepted as a developer by The NetBSD Foundation.
+
+### Programmer — Entregador Online (Jan 2014–Jun 2015)
+
+- Built an Android app for package delivery management and its supporting
+  Spring Boot REST APIs, shipped to the Google Play Store.
 
 ## Education
 
-Since 2025
-: M.Sc, Computer Science, Georgia Institute of Technology, United States  
-: Coursework  
-:: Applied Cryptography
+### M.Sc, Computer Science — Georgia Institute of Technology (2025, on hold)
 
-2011-2016
-: B.Sc, Computer Science, Universidade Federal de Goiás, Goiânia, Brazil  
-: Teaching Assistant:  
-:: Software Construction, Operating Systems, and Formal Languages & Automata
-: Research Assistant:  
-:: 2011-2012: Evaluation of IPv6 stacks for low-power devices  
-:: 2011: Coordination primitives in event-driven concurrent/distributed systems
+- Coursework: Applied Cryptography
 
-2012-2013
-: Non-Degree, Computer Science, University of South Carolina, Columbia  
-: Under full scholarship, awarded by the Ministry of Education, Brazil
-: Alpha Lambda Delta Honor Society, Dean's Honor List
-: Part-time programmer  
-:: Developed a medical records app for the medical school
+### B.Sc, Computer Science — Universidade Federal de Goiás (2011–2016)
+
+- Teaching Assistant: Software Construction, Operating Systems, and Formal
+  Languages & Automata
+- Research Assistant:
+    - 2011–2012: Evaluation of IPv6 stacks for low-power devices
+    - 2011: Coordination primitives in event-driven concurrent/distributed systems
+
+### Non-Degree, Computer Science — University of South Carolina (2012–2013)
+
+- Full scholarship, awarded by the Ministry of Education, Brazil
+- Alpha Lambda Delta Honor Society, Dean's Honor List
+- Developed a medical records app for the medical school
 
 ## Technical
 
-- Experience with C, Lua, Golang, Java, Python, Shell scripting
-- Proficient Linux and BSD user (NetBSD and FreeBSD)
-- Proficient with Docker, Docker Machine, Docker Compose
-- Working experience with Postgres, Cassandra, Redis, Memcached, Elasticsearch
-- Working experience with OpenResty, Nginx
-- Working experience with Git, SVN, and CVS
+- **Languages:** Go, C, Lua, Python, Java, Shell
+- **Protocols & standards:** MCP, gRPC, OpenAPI, REST
+- **Infrastructure:** Docker, Nginx/OpenResty, CI/CD
+- **Security & compliance:** FIPS 140-2, BoringSSL, SBOM, SLSA
+- **Databases:** PostgreSQL, Cassandra, Redis, Memcached, Elasticsearch
+- **Systems:** Linux, NetBSD, FreeBSD
 
 ## Associations
 
-Since 2011
-: Professional [Member](Member) at the [Association for Computing Machinery](https://www.acm.org/)
-
-Since 2015
-: Volunteer Developer, [The NetBSD Foundation](https://netbsd.org/)
-
-2018-2019
-: Professional Member [USENIX](https://www.usenix.org)
-
-## Hobbies
-
-I'm a specialty coffee enthusiast; my favorite method is the v60 pour over -- I 
-love how flexible it is and enjoy trying out new technique variations (the Tetsu
-Kasuya 4:6 one of my go-to). I exercise regularly, mainly at the gym and playing
-Tennis.
+- Professional Member, Association for Computing Machinery (since 2011)
