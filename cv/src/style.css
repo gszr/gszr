@@ -1,0 +1,147 @@
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(9, 107, 93, 0.08), transparent 34rem),
+    var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 ui-sans-serif, "Avenir Next", "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+}
+
+.masthead {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 28px;
+  margin-bottom: 34px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.7rem, 8vw, 5.3rem);
+  line-height: 0.94;
+  margin: 0 0 18px;
+  letter-spacing: 0;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.summary {
+  max-width: 760px;
+  font-size: 1.08rem;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 32px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.entry + .entry {
+  margin-top: 24px;
+}
+
+.entry header {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.entry p {
+  color: var(--muted);
+  margin: 0;
+  text-align: right;
+}
+
+.entry p span {
+  display: block;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+.entry li strong::after {
+  content: " -";
+}
+
+.technical {
+  columns: 2;
+  column-gap: 36px;
+}
+
+.technical li {
+  break-inside: avoid;
+  margin-bottom: 0.45rem;
+}
+
+.technical strong::after {
+  content: ": ";
+}
+
+@media (max-width: 680px) {
+  main {
+    padding: 34px 18px 48px;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .entry header {
+    display: block;
+  }
+
+  .entry p {
+    text-align: left;
+  }
+
+  .technical {
+    columns: 1;
+  }
+}

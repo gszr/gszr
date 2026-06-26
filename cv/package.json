@@ -1,0 +1,14 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CV as code: one data file rendered to many formats",
+  "scripts": {
+    "render": "node src/render.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.8.0"
+  }
+}

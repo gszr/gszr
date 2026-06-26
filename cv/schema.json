@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CV",
+  "type": "object",
+  "required": ["name", "location", "contacts", "summary", "experience", "education", "technical", "associations"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "location": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "url"],
+        "properties": {
+          "label": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "experience": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entry" }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["degree", "organization", "period", "highlights"],
+        "properties": {
+          "degree": { "type": "string" },
+          "organization": { "type": "string" },
+          "period": { "type": "string" },
+          "highlights": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "technical": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "items"],
+        "properties": {
+          "label": { "type": "string" },
+          "items": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "associations": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": ["role", "organization", "period", "highlights"],
+      "properties": {
+        "role": { "type": "string" },
+        "organization": { "type": "string" },
+        "period": { "type": "string" },
+        "highlights": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "text"],
+            "properties": {
+              "label": { "type": ["string", "null"] },
+              "text": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

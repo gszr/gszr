@@ -1,132 +1,273 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>cv</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guilherme Salazar - CV</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
+    :root {
+      --ink: #17201b;
+      --muted: #5b6861;
+      --line: #d7ddd8;
+      --accent: #096b5d;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(9, 107, 93, 0.08), transparent 34rem),
+    var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 ui-sans-serif, "Avenir Next", "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+}
+
+.masthead {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 28px;
+  margin-bottom: 34px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.7rem, 8vw, 5.3rem);
+  line-height: 0.94;
+  margin: 0 0 18px;
+  letter-spacing: 0;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.summary {
+  max-width: 760px;
+  font-size: 1.08rem;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 32px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.entry + .entry {
+  margin-top: 24px;
+}
+
+.entry header {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.entry p {
+  color: var(--muted);
+  margin: 0;
+  text-align: right;
+}
+
+.entry p span {
+  display: block;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+.entry li strong::after {
+  content: " -";
+}
+
+.technical {
+  columns: 2;
+  column-gap: 36px;
+}
+
+.technical li {
+  break-inside: avoid;
+  margin-bottom: 0.45rem;
+}
+
+.technical strong::after {
+  content: ": ";
+}
+
+@media (max-width: 680px) {
+  main {
+    padding: 34px 18px 48px;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .entry header {
+    display: block;
+  }
+
+  .entry p {
+    text-align: left;
+  }
+
+  .technical {
+    columns: 1;
+  }
+}
+
   </style>
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1 id="guilherme-salazar">Guilherme Salazar</h1>
-<h2 id="experience">Experience</h2>
-<h3 id="sr.-software-engineer-kong-inc.-jul-2017present">Sr. Software
-Engineer — Kong Inc. (Jul 2017–Present)</h3>
-<ul>
-<li><strong>Context Mesh (current)</strong> — Contributing to Kong
-Context Mesh, bridging AI agents with enterprise APIs via the Model
-Context Protocol (MCP). Building tooling that turns existing resources
-into production-ready MCP servers, working across Go (code generation,
-OpenAPI parsing) and Python (MCP server runtime) to deliver single-file,
-self-contained servers.</li>
-<li><strong>Enterprise features</strong> — Built core enterprise
-capabilities including RBAC, Workspaces, and the first license
-validation module and license generation API.</li>
-<li><strong>Plugin ecosystems</strong> — Co-implemented Go plugin
-support and co-authored several core/enterprise plugins (Request
-Callout, Proxy Cache, Request Validator, Rate Limiting Advanced, and
-others).</li>
-<li><strong>Service mesh</strong> — Collaborated with the Office of the
-CTO on the initial release of Kuma, now a CNCF Sandbox project.</li>
-<li><strong>Networking &amp; protocols</strong> — Delivered gRPC
-proxying support for Kong Gateway.</li>
-<li><strong>Supply-chain security &amp; compliance</strong> —
-Co-implemented SBOM generation for Kong Gateway and delivered
-SLSA-related improvements.</li>
-<li><strong>Cryptography</strong> — Co-implemented FIPS 140-2
-compatibility for Kong Gateway using BoringSSL.</li>
-<li><strong>Build &amp; delivery automation</strong> — Designed Kong
-Enterprise’s first artifact delivery pipeline, reducing package and
-Docker image build times to under 10 minutes.</li>
-<li><strong>Release engineering</strong> — Acted as release engineer for
-6 Kong Enterprise releases, plus customer-specific builds.</li>
-</ul>
-<h3 id="backend-engineer-appbase.io-oct-2016jul-2017">Backend Engineer —
-Appbase.io (Oct 2016–Jul 2017)</h3>
-<ul>
-<li>Designed and built a data streaming layer for Elasticsearch (2.x and
-5.x) based on OpenResty (Nginx + Lua).</li>
-<li>Built tooling to automate Elasticsearch benchmarks end-to-end, from
-cluster provisioning to benchmark execution using Elasticsearch
-Rally.</li>
-</ul>
-<h3
-id="student-developer-google-summer-of-code-2015-maraug-2015">Student
-Developer — Google Summer of Code 2015 (Mar–Aug 2015)</h3>
-<ul>
-<li>Contributed to the NetBSD kernel port of Lua by porting the Lua test
-suite to kernel space and resolving defects identified in the process.
-Subsequently accepted as a developer by The NetBSD Foundation.</li>
-</ul>
-<h3 id="programmer-entregador-online-jan-2014jun-2015">Programmer —
-Entregador Online (Jan 2014–Jun 2015)</h3>
-<ul>
-<li>Built an Android app for package delivery management and its
-supporting Spring Boot REST APIs, shipped to the Google Play Store.</li>
-</ul>
-<h2 id="education">Education</h2>
-<h3
-id="m.sc-computer-science-georgia-institute-of-technology-2025-on-hold">M.Sc,
-Computer Science — Georgia Institute of Technology (2025, on hold)</h3>
-<ul>
-<li>Coursework: Applied Cryptography</li>
-</ul>
-<h3
-id="b.sc-computer-science-universidade-federal-de-goiás-20112016">B.Sc,
-Computer Science — Universidade Federal de Goiás (2011–2016)</h3>
-<ul>
-<li>Teaching Assistant: Software Construction, Operating Systems, and
-Formal Languages &amp; Automata</li>
-<li>Research Assistant:
-<ul>
-<li>2011–2012: Evaluation of IPv6 stacks for low-power devices</li>
-<li>2011: Coordination primitives in event-driven concurrent/distributed
-systems</li>
-</ul></li>
-</ul>
-<h3
-id="non-degree-computer-science-university-of-south-carolina-20122013">Non-Degree,
-Computer Science — University of South Carolina (2012–2013)</h3>
-<ul>
-<li>Full scholarship, awarded by the Ministry of Education, Brazil</li>
-<li>Alpha Lambda Delta Honor Society, Dean’s Honor List</li>
-<li>Developed a medical records app for the medical school</li>
-</ul>
-<h2 id="technical">Technical</h2>
-<ul>
-<li><strong>Languages:</strong> Go, C, Lua, Python, Java, Shell</li>
-<li><strong>Protocols &amp; standards:</strong> MCP, gRPC, OpenAPI,
-REST</li>
-<li><strong>Infrastructure:</strong> Docker, Nginx/OpenResty, CI/CD</li>
-<li><strong>Security &amp; compliance:</strong> FIPS 140-2, BoringSSL,
-SBOM, SLSA</li>
-<li><strong>Databases:</strong> PostgreSQL, Cassandra, Redis, Memcached,
-Elasticsearch</li>
-<li><strong>Systems:</strong> Linux, NetBSD, FreeBSD</li>
-</ul>
-<h2 id="associations">Associations</h2>
-<ul>
-<li>Professional Member, Association for Computing Machinery (since
-2011)</li>
-</ul>
+  <main>
+    <header class="masthead">
+      <h1>Guilherme Salazar</h1>
+      <p class="contact"><span>Goiania, Goias, Brazil</span><span aria-hidden="true">/</span><a href="https://github.com/gszr">github.com/gszr</a><span aria-hidden="true">/</span><a href="https://www.linkedin.com/in/gszr">linkedin.com/in/gszr</a><span aria-hidden="true">/</span><a href="mailto:gsz@acm.org">gsz@acm.org</a></p>
+      <p class="summary">Software engineer with 10+ years of experience building foundational API infrastructure. Staff Software Engineer at JetStream Security, working on AI governance for agentic systems. Previously spent nearly nine years at Kong shaping how traffic flows between services across Kong Gateway and Kong Enterprise, most recently building AI-agent tooling (Context Mesh).</p>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+      <div>
+      <article class="entry">
+        <header>
+          <h3>Staff Software Engineer</h3>
+          <p>JetStream Security <span>Jun 2026-Present</span></p>
+        </header>
+        <ul>
+          <li>Building infrastructure for governance, observability, and security of enterprise AI traffic.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header>
+          <h3>Sr. Software Engineer</h3>
+          <p>Kong Inc. <span>Jul 2017-May 2026</span></p>
+        </header>
+        <ul>
+          <li><strong>Context Mesh</strong> Built tooling that turned existing resources into production-ready MCP servers, working across Go (code generation, OpenAPI parsing) and Python (MCP server runtime) to deliver single-file, self-contained servers.</li>
+          <li><strong>Enterprise features</strong> Built core enterprise capabilities including RBAC, Workspaces, and the first license validation module and license generation API.</li>
+          <li><strong>Plugin ecosystems</strong> Co-implemented Go plugin support and co-authored several core/enterprise plugins (Request Callout, Proxy Cache, Request Validator, Rate Limiting Advanced, and others).</li>
+          <li><strong>Service mesh</strong> Collaborated with the Office of the CTO on the initial release of Kuma, now a CNCF Sandbox project.</li>
+          <li><strong>Networking &amp; protocols</strong> Delivered gRPC proxying support for Kong Gateway.</li>
+          <li><strong>Security &amp; compliance</strong> Co-implemented SBOM generation and FIPS 140-2 compatibility (using BoringSSL) for Kong Gateway, and delivered SLSA-related supply-chain improvements.</li>
+          <li><strong>Build &amp; delivery automation</strong> Implemented Kong Enterprise's first fully automated artifact delivery pipeline, reducing package and Docker image build times to under 10 minutes.</li>
+          <li><strong>Release engineering</strong> Acted as release engineer for 6 Kong Enterprise releases, plus customer-specific builds.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header>
+          <h3>Backend Engineer</h3>
+          <p>Appbase.io <span>Oct 2016-Jul 2017</span></p>
+        </header>
+        <ul>
+          <li>Designed and built a data streaming layer for Elasticsearch (2.x and 5.x) based on OpenResty (Nginx + Lua).</li>
+          <li>Built tooling to automate Elasticsearch benchmarks end-to-end, from cluster provisioning to benchmark execution using Elasticsearch Rally.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header>
+          <h3>Student Developer</h3>
+          <p>Google Summer of Code 2015 <span>Mar-Aug 2015</span></p>
+        </header>
+        <ul>
+          <li>Contributed to the NetBSD kernel port of Lua by porting the Lua test suite to kernel space and resolving defects identified in the process. Subsequently accepted as a developer by The NetBSD Foundation.</li>
+        </ul>
+      </article></div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div>
+      <article class="entry">
+        <header>
+          <h3>M.Sc, Computer Science</h3>
+          <p>Georgia Institute of Technology <span>2025, on hold</span></p>
+        </header>
+        <ul>
+          <li>Coursework: Applied Cryptography</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header>
+          <h3>B.Sc, Computer Science</h3>
+          <p>Universidade Federal de Goias <span>2011-2016</span></p>
+        </header>
+        <ul>
+          <li>Visiting Student: University of South Carolina, 2012-2013, on full scholarship from Brazil's Ministry of Education (Alpha Lambda Delta Honor Society, Dean's Honor List)</li>
+          <li>Teaching Assistant: Software Construction, Operating Systems, and Formal Languages &amp; Automata</li>
+          <li>Research Assistant: 2011-2012: Evaluation of IPv6 stacks for low-power devices; 2011: Coordination primitives in event-driven concurrent/distributed systems</li>
+        </ul>
+      </article></div>
+    </section>
+
+    <section>
+      <h2>Technical</h2>
+      <ul class="technical">
+        <li><strong>Languages</strong>Go, C, Lua, Python, Java, Shell</li>
+          <li><strong>Protocols &amp; standards</strong>MCP, gRPC, OpenAPI, REST</li>
+          <li><strong>Infrastructure</strong>Docker, Nginx/OpenResty, CI/CD</li>
+          <li><strong>Security &amp; compliance</strong>FIPS 140-2, BoringSSL, SBOM, SLSA</li>
+          <li><strong>Databases</strong>PostgreSQL, Cassandra, Redis, Memcached, Elasticsearch</li>
+          <li><strong>Systems</strong>Linux, NetBSD, FreeBSD</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Associations</h2>
+      <ul>
+        <li>Professional Member, Association for Computing Machinery (since 2011)</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
