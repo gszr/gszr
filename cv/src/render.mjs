@@ -2,9 +2,9 @@ import fs from "node:fs";
 import { parse as parseYaml } from "yaml";
 import Ajv2020 from "ajv/dist/2020.js";
 
-const cv = parseYaml(fs.readFileSync("cv.yaml", "utf8"));
-const schema = JSON.parse(fs.readFileSync("schema.json", "utf8"));
-const theme = JSON.parse(fs.readFileSync("theme.json", "utf8"));
+const cv = parseYaml(fs.readFileSync("src/cv.yaml", "utf8"));
+const schema = JSON.parse(fs.readFileSync("src/schema.json", "utf8"));
+const theme = JSON.parse(fs.readFileSync("src/theme.json", "utf8"));
 
 function validate(data) {
   const ajv = new Ajv2020({ allErrors: true });
@@ -13,7 +13,7 @@ function validate(data) {
     const details = check.errors
       .map((error) => `  ${error.instancePath || "/"} ${error.message}`)
       .join("\n");
-    throw new Error(`cv.yaml failed schema validation:\n${details}`);
+    throw new Error(`src/cv.yaml failed schema validation:\n${details}`);
   }
 }
 
@@ -174,6 +174,6 @@ function renderText(data) {
 
 validate(cv);
 
-fs.writeFileSync("cv.md", renderMarkdown(cv));
-fs.writeFileSync("cv.html", renderHtml(cv));
-fs.writeFileSync("cv.txt", renderText(cv));
+fs.writeFileSync("files/cv.md", renderMarkdown(cv));
+fs.writeFileSync("files/cv.html", renderHtml(cv));
+fs.writeFileSync("files/cv.txt", renderText(cv));
