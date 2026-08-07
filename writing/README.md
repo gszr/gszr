@@ -6,7 +6,7 @@ Notes and longer-form writing.
 
 <!-- Add new posts at the top of this list. -->
 
-No posts yet.
+- 2026-08-07 — [Runta Setup](posts/2026-08-07-runta-setup.md)
 
 ## About
 
