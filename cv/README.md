@@ -1,5 +1,7 @@
 # CV
 
+Part of [`gszr/gszr`](https://github.com/gszr/gszr).
+
 Source lives in `src/`.
 
 Generated outputs live in `files/`:
@@ -10,7 +12,7 @@ Generated outputs live in `files/`:
 - [PDF CV](files/cv.pdf)
 - [DOCX CV](files/cv.docx)
 
-Build with:
+Build from this directory:
 
 ```sh
 make

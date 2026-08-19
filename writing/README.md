@@ -1,4 +1,6 @@
-# Blog
+# Writing
+
+Part of [`gszr/gszr`](https://github.com/gszr/gszr).
 
 Notes and longer-form writing.
 
@@ -10,4 +12,4 @@ Notes and longer-form writing.
 
 ## About
 
-This is a Markdown-first blog hosted and rendered directly by GitHub.
+This is Markdown-first writing hosted and rendered directly by GitHub.
