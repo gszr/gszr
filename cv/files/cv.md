@@ -1,0 +1,56 @@
+# Guilherme Salazar
+
+Goiania, Goias, Brazil | [github.com/gszr](https://github.com/gszr) | [linkedin.com/in/gszr](https://www.linkedin.com/in/gszr) | [gsz@acm.org](mailto:gsz@acm.org)
+
+_Software engineer with 10+ years of experience building foundational API infrastructure. Staff Software Engineer at JetStream Security, working on AI governance for agentic systems. Previously spent nearly nine years at Kong shaping how traffic flows between services across Kong Gateway and Kong Enterprise, most recently building AI-agent tooling (Context Mesh)._
+
+## Experience
+
+### Staff Software Engineer - JetStream Security (Jun 2026-Present)
+
+- Building infrastructure for governance, observability, and security of enterprise AI traffic.
+
+### Sr. Software Engineer - Kong Inc. (Jul 2017-May 2026)
+
+- **Context Mesh** - Built tooling that turned existing resources into production-ready MCP servers, working across Go (code generation, OpenAPI parsing) and Python (MCP server runtime) to deliver single-file, self-contained servers.
+- **Enterprise features** - Built core enterprise capabilities including RBAC, Workspaces, and the first license validation module and license generation API.
+- **Plugin ecosystems** - Co-implemented Go plugin support and co-authored several core/enterprise plugins (Request Callout, Proxy Cache, Request Validator, Rate Limiting Advanced, and others).
+- **Service mesh** - Collaborated with the Office of the CTO on the initial release of Kuma, now a CNCF Sandbox project.
+- **Networking & protocols** - Delivered gRPC proxying support for Kong Gateway.
+- **Security & compliance** - Co-implemented SBOM generation and FIPS 140-2 compatibility (using BoringSSL) for Kong Gateway, and delivered SLSA-related supply-chain improvements.
+- **Build & delivery automation** - Implemented Kong Enterprise's first fully automated artifact delivery pipeline, reducing package and Docker image build times to under 10 minutes.
+- **Release engineering** - Acted as release engineer for 6 Kong Enterprise releases, plus customer-specific builds.
+
+### Backend Engineer - Appbase.io (Oct 2016-Jul 2017)
+
+- Designed and built a data streaming layer for Elasticsearch (2.x and 5.x) based on OpenResty (Nginx + Lua).
+- Built tooling to automate Elasticsearch benchmarks end-to-end, from cluster provisioning to benchmark execution using Elasticsearch Rally.
+
+### Student Developer - Google Summer of Code 2015 (Mar-Aug 2015)
+
+- Contributed to the NetBSD kernel port of Lua by porting the Lua test suite to kernel space and resolving defects identified in the process. Subsequently accepted as a developer by The NetBSD Foundation.
+
+## Education
+
+### M.Sc, Computer Science - Georgia Institute of Technology (2025, on hold)
+
+- Coursework: Applied Cryptography
+
+### B.Sc, Computer Science - Universidade Federal de Goias (2011-2016)
+
+- Visiting Student: University of South Carolina, 2012-2013, on full scholarship from Brazil's Ministry of Education (Alpha Lambda Delta Honor Society, Dean's Honor List)
+- Teaching Assistant: Software Construction, Operating Systems, and Formal Languages & Automata
+- Research Assistant: 2011-2012: Evaluation of IPv6 stacks for low-power devices; 2011: Coordination primitives in event-driven concurrent/distributed systems
+
+## Technical
+
+- **Languages:** Go, C, Lua, Python, Java, Shell
+- **Protocols & standards:** MCP, gRPC, OpenAPI, REST
+- **Infrastructure:** Docker, Nginx/OpenResty, CI/CD
+- **Security & compliance:** FIPS 140-2, BoringSSL, SBOM, SLSA
+- **Databases:** PostgreSQL, Cassandra, Redis, Memcached, Elasticsearch
+- **Systems:** Linux, NetBSD, FreeBSD
+
+## Associations
+
+- Professional Member, Association for Computing Machinery (since 2011)

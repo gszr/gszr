@@ -1,0 +1,121 @@
+# yaml-language-server: $schema=./schema.json
+name: Guilherme Salazar
+location: Goiania, Goias, Brazil
+
+contacts:
+  - label: github.com/gszr
+    url: https://github.com/gszr
+  - label: linkedin.com/in/gszr
+    url: https://www.linkedin.com/in/gszr
+  - label: gsz@acm.org
+    url: mailto:gsz@acm.org
+
+summary: >-
+  Software engineer with 10+ years of experience building foundational API
+  infrastructure. Staff Software Engineer at JetStream Security, working on AI
+  governance for agentic systems. Previously spent nearly nine years at Kong
+  shaping how traffic flows between services across Kong Gateway and Kong
+  Enterprise, most recently building AI-agent tooling (Context Mesh).
+
+experience:
+  - role: Staff Software Engineer
+    organization: JetStream Security
+    period: Jun 2026-Present
+    highlights:
+      - label:
+        text: >-
+          Building infrastructure for governance, observability, and security
+          of enterprise AI traffic.
+
+  - role: Sr. Software Engineer
+    organization: Kong Inc.
+    period: Jul 2017-May 2026
+    highlights:
+      - label: Context Mesh
+        text: >-
+          Built tooling that turned
+          existing resources into production-ready MCP servers, working across
+          Go (code generation, OpenAPI parsing) and Python (MCP server runtime)
+          to deliver single-file, self-contained servers.
+      - label: Enterprise features
+        text: >-
+          Built core enterprise capabilities including RBAC, Workspaces, and the
+          first license validation module and license generation API.
+      - label: Plugin ecosystems
+        text: >-
+          Co-implemented Go plugin support and co-authored several
+          core/enterprise plugins (Request Callout, Proxy Cache, Request
+          Validator, Rate Limiting Advanced, and others).
+      - label: Service mesh
+        text: >-
+          Collaborated with the Office of the CTO on the initial release of
+          Kuma, now a CNCF Sandbox project.
+      - label: Networking & protocols
+        text: Delivered gRPC proxying support for Kong Gateway.
+      - label: Security & compliance
+        text: >-
+          Co-implemented SBOM generation and FIPS 140-2 compatibility (using
+          BoringSSL) for Kong Gateway, and delivered SLSA-related supply-chain
+          improvements.
+      - label: Build & delivery automation
+        text: >-
+          Implemented Kong Enterprise's first fully automated artifact delivery
+          pipeline, reducing package and Docker image build times to under 10 minutes.
+      - label: Release engineering
+        text: >-
+          Acted as release engineer for 6 Kong Enterprise releases, plus
+          customer-specific builds.
+
+  - role: Backend Engineer
+    organization: Appbase.io
+    period: Oct 2016-Jul 2017
+    highlights:
+      - label:
+        text: >-
+          Designed and built a data streaming layer for Elasticsearch (2.x and
+          5.x) based on OpenResty (Nginx + Lua).
+      - label:
+        text: >-
+          Built tooling to automate Elasticsearch benchmarks end-to-end, from
+          cluster provisioning to benchmark execution using Elasticsearch Rally.
+
+  - role: Student Developer
+    organization: Google Summer of Code 2015
+    period: Mar-Aug 2015
+    highlights:
+      - label:
+        text: >-
+          Contributed to the NetBSD kernel port of Lua by porting the Lua test
+          suite to kernel space and resolving defects identified in the process.
+          Subsequently accepted as a developer by The NetBSD Foundation.
+
+education:
+  - degree: M.Sc, Computer Science
+    organization: Georgia Institute of Technology
+    period: 2025, on hold
+    highlights:
+      - "Coursework: Applied Cryptography"
+  - degree: B.Sc, Computer Science
+    organization: Universidade Federal de Goias
+    period: 2011-2016
+    highlights:
+      - "Visiting Student: University of South Carolina, 2012-2013, on full scholarship from Brazil's Ministry of Education (Alpha Lambda Delta Honor Society, Dean's Honor List)"
+      - "Teaching Assistant: Software Construction, Operating Systems, and Formal Languages & Automata"
+      - "Research Assistant: 2011-2012: Evaluation of IPv6 stacks for low-power devices; 2011: Coordination primitives in event-driven concurrent/distributed systems"
+
+technical:
+  - label: Languages
+    items: [Go, C, Lua, Python, Java, Shell]
+  - label: Protocols & standards
+    items: [MCP, gRPC, OpenAPI, REST]
+  - label: Infrastructure
+    items: [Docker, Nginx/OpenResty, CI/CD]
+  - label: Security & compliance
+    items: [FIPS 140-2, BoringSSL, SBOM, SLSA]
+  - label: Databases
+    items: [PostgreSQL, Cassandra, Redis, Memcached, Elasticsearch]
+  - label: Systems
+    items: [Linux, NetBSD, FreeBSD]
+
+associations:
+  - Professional Member, Association for Computing Machinery (since 2011)
