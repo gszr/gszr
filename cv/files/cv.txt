@@ -1,16 +1,16 @@
 Guilherme Salazar
 
-Goiania, Goias, Brazil | github.com/gszr | linkedin.com/in/gszr | gsz@acm.org
+Goiânia, Goiás, Brazil | github.com/gszr | linkedin.com/in/gszr | gsz@acm.org
 
-Software engineer with 10+ years of experience building foundational API infrastructure. Staff Software Engineer at JetStream Security, working on AI governance for agentic systems. Previously spent nearly nine years at Kong shaping how traffic flows between services across Kong Gateway and Kong Enterprise, most recently building AI-agent tooling (Context Mesh).
+Software engineer with 10+ years of experience building foundational API infrastructure. Staff Software Engineer at JetStream Security, building AI governance, observability, and security infrastructure for LLMs, MCP, and agents. Previously spent nearly nine years at Kong across Kong Gateway and Kong Enterprise, most recently building AI-agent tooling (Context Mesh).
 
 Experience
 
 Staff Software Engineer - JetStream Security (Jun 2026-Present)
 
-  - Building infrastructure for governance, observability, and security of enterprise AI traffic.
+  - Building infrastructure for governance, observability, and security of enterprise AI traffic across LLMs, MCP, and agents.
 
-Sr. Software Engineer - Kong Inc. (Jul 2017-May 2026)
+Senior Software Engineer - Kong Inc. (Jul 2017-May 2026)
 
   - Context Mesh - Built tooling that turned existing resources into production-ready MCP servers, working across Go (code generation, OpenAPI parsing) and Python (MCP server runtime) to deliver single-file, self-contained servers.
   - Enterprise features - Built core enterprise capabilities including RBAC, Workspaces, and the first license validation module and license generation API.
@@ -36,11 +36,16 @@ M.Sc, Computer Science - Georgia Institute of Technology (2025, on hold)
 
   - Coursework: Applied Cryptography
 
-B.Sc, Computer Science - Universidade Federal de Goias (2011-2016)
+B.Sc, Computer Science - Universidade Federal de Goiás (2011-2016)
 
   - Visiting Student: University of South Carolina, 2012-2013, on full scholarship from Brazil's Ministry of Education (Alpha Lambda Delta Honor Society, Dean's Honor List)
   - Teaching Assistant: Software Construction, Operating Systems, and Formal Languages & Automata
   - Research Assistant: 2011-2012: Evaluation of IPv6 stacks for low-power devices; 2011: Coordination primitives in event-driven concurrent/distributed systems
+
+Patents
+
+  - Evaluation and validation of application programming interface requests and responses for microservices applications - US 12,645,512, issued Jun 2, 2026
+  - Configuration hash comparison - US 11,996,982, issued May 4, 2024
 
 Technical
 
@@ -53,4 +58,4 @@ Technical
 
 Associations
 
-  - Professional Member, Association for Computing Machinery (since 2011)
+  - Professional Member, Association for Computing Machinery (since Dec 2011)

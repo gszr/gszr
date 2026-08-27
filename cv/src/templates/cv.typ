@@ -9,10 +9,10 @@
 #set document(title: cv.name + " - CV", author: cv.name)
 #set page(
   paper: "a4",
-  margin: (x: 1.35cm, y: 1.35cm),
+  margin: (x: 1.2cm, y: 0.8cm),
 )
-#set text(font: "Noto Sans", size: 8.4pt, fill: ink, lang: "en")
-#set par(justify: false, leading: 0.68em)
+#set text(font: "Noto Sans", size: 8.2pt, fill: ink, lang: "en")
+#set par(justify: false, leading: 0.62em)
 
 #let slash = text(fill: muted, " / ")
 
@@ -25,7 +25,7 @@
 }
 
 #let section-title(title) = {
-  v(0.62em)
+  v(0.45em)
   grid(
     columns: (3.2cm, 1fr),
     column-gutter: 0.55cm,
@@ -50,7 +50,7 @@
 }
 
 #let bullet-list(items) = {
-  v(0.2em)
+  v(0.12em)
   for item in items {
     grid(
       columns: (0.28cm, 1fr),
@@ -59,7 +59,7 @@
       text(size: 7.2pt)[•],
       block(width: 100%)[#item],
     )
-    v(0.16em)
+    v(0.10em)
   }
 }
 
@@ -72,13 +72,13 @@
       [#highlight.text]
     }
   }))
-  v(0.36em)
+  v(0.24em)
 }
 
 #let education-entry(entry) = {
   entry-heading(entry.degree, entry.organization, entry.period)
   bullet-list(entry.highlights.map(highlight => [#highlight]))
-  v(0.25em)
+  v(0.16em)
 }
 
 #let technical-row(group) = {
@@ -115,6 +115,9 @@
 #for entry in cv.education {
   education-entry(entry)
 }
+
+#section-title("Patents")
+#bullet-list(cv.patents.map(patent => [#strong(patent.title)#text(fill: muted, " - ")#patent.number, issued #patent.issued]))
 
 #section-title("Technical")
 #grid(

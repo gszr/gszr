@@ -57,7 +57,12 @@ function renderMarkdown(data) {
     lines.push("");
   });
 
-  lines.push("## Technical", "");
+  lines.push("## Patents", "");
+  data.patents.forEach((patent) => {
+    lines.push(`- **${patent.title}** - ${patent.number}, issued ${patent.issued}`);
+  });
+
+  lines.push("", "## Technical", "");
   data.technical.forEach((group) => {
     lines.push(`- **${group.label}:** ${group.items.join(", ")}`);
   });
@@ -108,6 +113,10 @@ function renderHtml(data) {
         </ul>
       </article>`).join("\n");
 
+  const patents = data.patents
+    .map((patent) => `<li><strong>${escapeHtml(patent.title)}</strong> - ${escapeHtml(patent.number)}, issued ${escapeHtml(patent.issued)}</li>`)
+    .join("\n          ");
+
   const technical = data.technical
     .map((group) => `<li><strong>${escapeHtml(group.label)}</strong>${escapeHtml(group.items.join(", "))}</li>`)
     .join("\n          ");
@@ -142,6 +151,13 @@ ${styles}
     <section>
       <h2>Education</h2>
       <div>${education}</div>
+    </section>
+
+    <section>
+      <h2>Patents</h2>
+      <ul>
+        ${patents}
+      </ul>
     </section>
 
     <section>
